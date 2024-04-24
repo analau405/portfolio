@@ -58,8 +58,8 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 #profile {
-    width: 30%;
-    height: 500px;
+    width: 300px;
+    height: auto;
     object-fit: cover;
     object-position: center;
 
@@ -132,7 +132,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 .title__div {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -305,14 +305,15 @@ https://en.bem.info/methodology/quick-start/*/
     color: grey;
     font-size: 18px;
     font-weight: normal;
+    padding-bottom: 20px;
 }
 
 .experience_content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 40px;
 
 }
 
@@ -343,7 +344,7 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .formcontato__img {
-    width: 80%;
+    width: auto;
 }
 
 .formcontato__text {
@@ -461,7 +462,43 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (min-width: 768px) {
 
+    .imglogo {
+        width: 200px;
+    }
+    
+    #profile {
+        width: 30%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+    
+    }
+    .title {
+        padding: 0px 0px 0px 100px;
+        align-items: center;
+    }
+    
+    .title__container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .title__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
+    .title__div {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
 /* Menú */
 
 /*title*/
@@ -490,8 +527,16 @@ Utiliza las referencias de los breakpoints @media abajo */
     gap: 10px;
 }
 
+.experience_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
 
 }
+
+
 
 /*Mobile*/
 @media (min-width: 425px) {
@@ -512,6 +557,4 @@ Utiliza las referencias de los breakpoints @media abajo */
 
  /*Contacto*/
 
-/*Footer*/
-
-}
+/*Footer*/}
